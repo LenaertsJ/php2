@@ -14,7 +14,7 @@ class City
 
     //constructor
 
-    function __construct($img_id, $img_filename, $img_date, $img_height, $img_published, $img_title, $img_width)
+    function __construct($img_id, $img_filename, $img_title, $img_height, $img_width, $img_published, $img_date)
     {
        $this->img_id = $img_id;
        $this->img_filename = $img_filename;

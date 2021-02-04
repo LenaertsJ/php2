@@ -3,6 +3,7 @@ error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 
 require_once "lib/autoload.php";
+require_once "./models/City.php";
 
 PrintHead();
 PrintJumbo();
@@ -20,7 +21,7 @@ PrintJumbo();
 
         //put data in city class
 
-        $city = new City($row['img_id'], $row['img_title'], $row['img_filename'], $row['img_width'], $row['img_height'], $row['img_date'], $row['img_published']);
+        $city = new City($row['img_id'], $row['img_filename'], $row['img_title'], $row['img_height'], $row['img_width'], $row['img_published'], $row['img_date']);
 
 
         //get template

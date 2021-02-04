@@ -1,7 +1,5 @@
 <?php
 
-require_once "../Models/City.php";
-
 session_start();
 
 //print json_encode($_SERVER); exit;
@@ -19,6 +17,7 @@ require_once "routing.php";
 require_once "strings.php";
 
 require_once "access_control.php";
+
 
 //initialize $errors array
 $errors = [];
