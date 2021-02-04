@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584d5f1c-66c1-44bb-8f51-b383d7c06e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oef1.2/Models/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.2/stad.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/stad.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612267718575</updated>
       <workItem from="1612267720240" duration="427000" />
-      <workItem from="1612426723073" duration="3274000" />
+      <workItem from="1612426723073" duration="3663000" />
     </task>
     <servers />
   </component>

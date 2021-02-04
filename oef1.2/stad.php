@@ -30,10 +30,10 @@ PrintJumbo();
 
         $output = $template;
 
-        foreach( array_keys($row) as $field )
-            {
-                $output = str_replace( "@$field@", $row["$field"], $output );
-            }
+        $output = str_replace( "@img_title@", $city->getImgTitle(), $output );
+        $output = str_replace( "@img_width@", $city->getImgWidth(), $output );
+        $output = str_replace( "@img_height@", $city->getImgHeight(), $output );
+        $output = str_replace( "@img_filename@", $city->getImgFilename(), $output );
 
         print $output;
 
