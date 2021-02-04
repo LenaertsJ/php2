@@ -1,4 +1,7 @@
 <?php
+
+require_once "../Models/City.php";
+
 session_start();
 
 //print json_encode($_SERVER); exit;
