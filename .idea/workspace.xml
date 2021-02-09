@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.2/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/autoload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.2/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/login_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/stad.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/stad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/templates/column.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,8 @@
       <updated>1612267718575</updated>
       <workItem from="1612267720240" duration="427000" />
       <workItem from="1612426723073" duration="6263000" />
-      <workItem from="1612860256302" duration="1451000" />
+      <workItem from="1612860256302" duration="1667000" />
+      <workItem from="1612864193748" duration="114000" />
     </task>
     <servers />
   </component>

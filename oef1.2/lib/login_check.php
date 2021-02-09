@@ -7,19 +7,19 @@ require_once "autoload.php";
 
 $user = LoginCheck();
 
-var_dump($user);
-
-//if ( count($user) > 0 )
-//{
-//    $_SESSION['user'] = new User($user['usr_id'], $user['usr_email'], $user['usr_voornaam'], $user['usr_naam'], $user['usr_telefoon'])
-//    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']['usr_voornaam'];
+if ( count($user) > 0 )
+{
+    $_SESSION['user'] = new User($user['usr_id'], $user['usr_email'], $user['usr_voornaam'], $user['usr_naam'], $user['usr_telefoon'])
+    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']['usr_voornaam'];
+    var_dump($_SESSION['user']);
+    var_dump($_SESSION['msgs']);
 //    GoHome();
-//}
-//else
-//{
-//    unset( $_SESSION['user'] );
-//    GoToNoAccess();
-//}
+}
+else
+{
+    unset( $_SESSION['user'] );
+    GoToNoAccess();
+}
 
 function LoginCheck()
 {

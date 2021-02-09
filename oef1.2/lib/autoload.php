@@ -4,8 +4,8 @@
 $request_uri = explode("/", $_SERVER['REQUEST_URI']);
 $app_root = "/" . $request_uri[1] . "/" . $request_uri[2];
 
-require_once "$app_root/models.City.php";
-require_once "$app_root/models.User.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/User.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/City.php";
 
 session_start();
 
