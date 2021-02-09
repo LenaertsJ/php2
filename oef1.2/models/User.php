@@ -10,6 +10,17 @@ class User
     private $usr_email;
     private $usr_telefoon;
 
+    //Constructor
+    function __construct($usr_id, $usr_email, $usr_voornaam, $usr_naam, $usr_telefoon){
+        $this->usr_id = $usr_id;
+        $this->usr_email = $usr_email;
+        $this->usr_voornaam = $usr_voornaam;
+        $this->usr_naam = $usr_naam;
+        $this->usr_telefoon = $usr_telefoon;
+
+    }
+
+
     //Methods : getters and setters
     public function getUsrId()
     {
@@ -23,7 +34,7 @@ class User
 
     public function getUsrVoornaam()
     {
-        return $this->usr_voornaam;
+        return strtoupper($this->usr_voornaam);
     }
 
     public function setUsrVoornaam($usr_voornaam)
@@ -33,7 +44,7 @@ class User
 
     public function getUsrNaam()
     {
-        return $this->usr_naam;
+        return strtoupper($this->usr_naam);
     }
 
     public function setUsrNaam($usr_naam)

@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="584d5f1c-66c1-44bb-8f51-b383d7c06e8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/Models/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/models/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.2/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.2/lib/connection_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/connection_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.2/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/lib/login_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.2/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.2/stad.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/stad.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.2/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.2/templates/column.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1612267718575</updated>
       <workItem from="1612267720240" duration="427000" />
-      <workItem from="1612426723073" duration="4442000" />
+      <workItem from="1612426723073" duration="6263000" />
+      <workItem from="1612860256302" duration="1451000" />
     </task>
     <servers />
   </component>

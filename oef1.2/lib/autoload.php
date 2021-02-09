@@ -1,10 +1,13 @@
 <?php
 
-session_start();
-
 //print json_encode($_SERVER); exit;
 $request_uri = explode("/", $_SERVER['REQUEST_URI']);
 $app_root = "/" . $request_uri[1] . "/" . $request_uri[2];
+
+require_once "$app_root/models.City.php";
+require_once "$app_root/models.User.php";
+
+session_start();
 
 require_once "connection_data.php";
 require_once "pdo.php";

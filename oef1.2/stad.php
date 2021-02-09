@@ -6,7 +6,7 @@ require_once "lib/autoload.php";
 require_once "./models/City.php";
 
 PrintHead();
-PrintJumbo();
+PrintJumbo("Stad: the OOP style");
 ?>
 
 <div class="container">
