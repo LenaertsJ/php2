@@ -21,7 +21,7 @@ function PrintNavbar( )
 
     if ( isset($_SESSION['user']))
     {
-        $username = $_SESSION['user']['usr_voornaam'] . " " . $_SESSION['user']['usr_naam'];
+        $username = $_SESSION['user']->getUsrVoornaam() . " " . $_SESSION['user']->getUsrNaam();
     }
     else
     {
@@ -56,6 +56,7 @@ function MergeViewWithData( $template, $data )
 
     return $returnvalue;
 }
+
 
 function MergeViewWithExtraElements( $template, $elements )
 {

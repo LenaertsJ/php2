@@ -6,7 +6,7 @@ require_once "lib/autoload.php";
 
 PrintHead();
 PrintJumbo( $title = "Leuke plekken in Europa" ,
-                        $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
+            $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
 PrintNavbar();
 ?>
 
@@ -21,7 +21,7 @@ PrintNavbar();
     }
 
     //get data
-    $data = GetData( "select * from images" );
+    $data = $dbm->GetData( "select * from images" );
 
     //get template
     $template = file_get_contents("templates/column.html");

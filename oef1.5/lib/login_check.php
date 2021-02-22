@@ -7,13 +7,11 @@ require_once "autoload.php";
 
 $user = LoginCheck();
 
-if ( count($user) > 0 )
+if ( $user )
 {
-    $_SESSION['user'] = new User($user['usr_id'], $user['usr_email'], $user['usr_voornaam'], $user['usr_naam'], $user['usr_telefoon'])
-    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']['usr_voornaam'];
-    var_dump($_SESSION['user']);
-    var_dump($_SESSION['msgs']);
-//    GoHome();
+    $_SESSION['user'] = $user;
+    $_SESSION['msgs'][] = "Welkom, " . $_SESSION['user']->getUsrVoornaam();
+    GoHome();
 }
 else
 {
@@ -69,11 +67,13 @@ function LoginCheck()
         {
             foreach ( $data as $row )
             {
-                if ( password_verify( $ww, $row['usr_password'] ) ) return $row;
+                if ( password_verify( $ww, $row['usr_password'] ) )  //return $row;
+                    $user = new User($row['usr_id'], $row['usr_email'], $row['usr_voornaam'], $row['usr_naam'], $row['usr_telefoon']);
+                    return $user;
             }
 
         }
 
-        return $data;
+        return null;
     }
 }
