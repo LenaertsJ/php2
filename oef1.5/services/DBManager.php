@@ -40,6 +40,9 @@ class DBManager
         //define and execute query
         $result = $conn->query( $sql );
 
+        //log sql
+        $this->logobject->log($sql);
+
         //show result (if there is any)
         if ( $result->rowCount() > 0 )
         {
@@ -61,6 +64,9 @@ class DBManager
 
         //define and execute query
         $result = $conn->query( $sql );
+
+        //log sql
+        $this->logobject->log($sql);
 
         return $result;
     }

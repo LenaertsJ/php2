@@ -2,7 +2,19 @@
 
 require_once "./lib/autoload.php";
 
-$log = $logger->showLog();
+PrintHead();
+PrintJumbo( $title = "Logbestand" ,
+    $subtitle = "Historiek sql statements" );
+PrintNavbar();
 
-$log = str_replace( "\r\n", "<br>", $log );
+
+?>
+
+<div class="container">
+
+    <?php echo $logger->showLog(); ?>
+
+</div>
+</body>
+</html>
 

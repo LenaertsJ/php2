@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584d5f1c-66c1-44bb-8f51-b383d7c06e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/btw_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/btw_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/lib/pdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/lib/pdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/profiel.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/profiel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_start/stad_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/01_start/stad_form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.5/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/lib/form_elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/form_elements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/login_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/lib/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/lib/validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/models/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/models/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/profiel.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/profiel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.5/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/log/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.5/services/DBManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/services/DBManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oef1.5/services/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/services/Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/services/MessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/services/MessageService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/stad_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/stad_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.5/steden.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/steden.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.5/showLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.5/showLog.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +53,7 @@
       <workItem from="1612882508649" duration="793000" />
       <workItem from="1613561499748" duration="3470000" />
       <workItem from="1613982348293" duration="6164000" />
-      <workItem from="1614164077100" duration="4901000" />
+      <workItem from="1614164077100" duration="6076000" />
     </task>
     <servers />
   </component>

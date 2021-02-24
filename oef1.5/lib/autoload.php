@@ -25,7 +25,7 @@ require_once "access_control.php";
 
 //initialize logger and connection class
 
-$logger = new Logger($_SERVER['DOCUMENT_ROOT'] . $app_root . "/log/log.txt");
+$logger = new Logger();
 $connection = new connection();
 
 //initialize DBManager
