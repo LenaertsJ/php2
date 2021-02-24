@@ -69,7 +69,9 @@ function MergeViewWithExtraElements( $template, $elements )
 
 function MergeViewWithErrors( $template )
 {
-    global $ms;
+    $container = new Container;
+    $ms = $container->getMessageService();
+//    global $ms;
     $errors = $ms->getInputErrors();
 
     if($errors != null){

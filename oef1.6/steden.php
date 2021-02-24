@@ -14,6 +14,11 @@ PrintNavbar();
     <div class="row">
 
 <?php
+
+$container = new Container;
+$ms = $container->getMessageService();
+$dbm = $container->getDBManager();
+
     //toon messages als er zijn
 //    foreach ( $msgs as $msg )
 //    {

@@ -1,10 +1,14 @@
 <?php
 require_once "autoload.php";
 
+
 function CompareWithDatabase( $table, $pkey ): void
 {
-    global $ms;
-    global $dbm;
+
+    $ms = $container->getMessageService();
+    $dbm = $container->getDBManager();
+//    global $ms;
+//    global $dbm;
     $data = $dbm->GetData( "SHOW FULL COLUMNS FROM $table" );
 
     //overloop alle in de databank gedefinieerde velden van de tabel

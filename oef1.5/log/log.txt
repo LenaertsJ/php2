@@ -1,3 +1,0 @@
-2021-02-24 12:38:03pm<br>select * from images
- images
-2021-02-24 12:38:03pm<br>UPDATE images SET  img_title = 'De Muur'  ,  img_filename = 'berlin.jpg'  ,  img_width = '888'  ,  img_height = '78'  ,  img_lan_id = '7'  ,  img_date = '2020-09-14'  WHERE img_id = 1 

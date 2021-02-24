@@ -21,6 +21,10 @@ else
 
 function LoginCheck()
 {
+
+    $ms = $container->getMessageService();
+    $dbm = $container->getDBManager();
+
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
         //controle CSRF token
@@ -59,7 +63,6 @@ function LoginCheck()
         //search user in database
         $email = $_POST['usr_email'];
         $ww = $_POST['usr_password'];
-        global $dbm;
 
         $sql = "SELECT * FROM user WHERE usr_email='$email' ";
         $data = $dbm->GetData($sql);

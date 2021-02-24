@@ -8,7 +8,7 @@ class Logger
 
     public function __construct()
     {
-        $this->logfile = $_SERVER['DOCUMENT_ROOT'] . "/php2_oefeningen/oef1.5/log/log.txt";
+        $this->logfile = $_SERVER['DOCUMENT_ROOT'] . "/php2_oefeningen/oef1.6/log/log.txt";
         $this->fp = fopen($this->logfile, "r+");
     }
 
