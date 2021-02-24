@@ -47,7 +47,7 @@ function ExecuteSQL( $sql )
 {
     global $conn;
 
-    CreateConnection();
+    $dbm->CreateConnection();
 
     //define and execute query
     $result = $conn->query( $sql );

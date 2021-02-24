@@ -6,6 +6,10 @@ $app_root = "/" . $request_uri[1] . "/" . $request_uri[2];
 
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/User.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/City.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/MessageService.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/Connection.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Logger.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/DBManager.php";
 
 session_start();
 
@@ -17,49 +21,45 @@ require_once "validate.php";
 require_once "security.php";
 require_once "routing.php";
 require_once "strings.php";
-require_once "../services/MessageService.php";
-require_once "../services/Logger.php";
-require_once "../services/Connection.php";
-require_once "../services/DBManager.php";
-
-
 require_once "access_control.php";
 
 //initialize logger and connection class
 
-$logger = new Logger('log.txt');
+$logger = new Logger($_SERVER['DOCUMENT_ROOT'] . $app_root . "/log/log.txt");
 $connection = new connection();
 
 //initialize DBManager
 
-$dbm = new DBManager($logger, );
+$dbm = new DBManager($logger, $connection);
 
-//initialize message service
+//INITIALIZE MESSAGE SERVICE
 
-$e = $_SESSION['errors'];
-//$ie = $_SESSION['errors'][ "$fieldname" . "_error" ];
-$infos = $_SESSION['msgs'];
+//general errors
+$e = [];
+if ( key_exists( 'errors', $_SESSION ) AND is_array( $_SESSION['errors']) )
+{
+    $e = $_SESSION['errors'];
+    $_SESSION['errors'] = [];
+}
 
-$ms = new MessageService();
+//input errors
+$ie = [];
+if ( key_exists( 'input_errors', $_SESSION ) AND is_array( $_SESSION['input_errors']) )
+{
+    $ie = $_SESSION['input_errors'];
+    $_SESSION['input_errors'] = [];
+}
 
+//info messages
+$infos = [];
+if ( key_exists( 'msgs', $_SESSION ) AND is_array( $_SESSION['msgs']) )
+{
+    $infos = $_SESSION['msgs'];
+    $_SESSION['msgs'] = [];
+}
 
-//initialize $errors array
-//$errors = [];
-//
-//if ( key_exists( 'errors', $_SESSION ) AND is_array( $_SESSION['errors']) )
-//{
-//    $errors = $_SESSION['errors'];
-//    $_SESSION['errors'] = [];
-//}
+$ms = new MessageService($e, $ie, $infos);
 
-//initialize $msgs array
-//$msgs = [];
-//
-//if ( key_exists( 'msgs', $_SESSION ) AND is_array( $_SESSION['msgs']) )
-//{
-//    $msgs = $_SESSION['msgs'];
-//    $_SESSION['msgs'] = [];
-//}
 
 //initialize $old_post
 $old_post = [];

@@ -14,23 +14,28 @@ class MessageService
         $this->infos = $infos;
     }
 
-    //parameter should be one of the above properties to find the respective count
-    public function Count($e){
-        if (!count($e)) {
-            return 0;
-        } else {
-            return count($e);
-        }
+    //Count function (parameter = $this->errors, $this->input_errors, $this->infos)
+    public function count($error_type){
+        return count($error_type);
     }
 
-    //parameter is session variable
-    public function newCount($session_errors)
+    //Count new errors/msgs
+    public function countNewErrors()
     {
-        if (!count($session_errors)) {
-            return 0;
-        } else {
-            return count($session_errors);
-        }
+        return count($_SESSION['errors']);
+
+    }
+
+    public function countNewInputErrors()
+    {
+        return count($_SESSION['input_errors']);
+
+    }
+
+    public function countNewInfos()
+    {
+        return count($_SESSION['msgs']);
+
     }
 
     /**
@@ -38,19 +43,28 @@ class MessageService
      */
     public function getInputErrors()
     {
-        return $this->input_errors;
+        if($this->count($this->input_errors)){
+            return $this->input_errors;
+        } else {
+            return null;
+        }
     }
 
     public function AddMessage($type, $msg, $key = null){
-        return $_SESSION['msgs'][$type] = $msg;
+        if($type == 'input_errors'){
+            $_SESSION['input_errors'][$key . '_error'] = $msg;
+        } else {
+            $_SESSION[$type] = $msg;
+        }
     }
 
-    public function ShowErrors($error_type){
-        print "<p style='color:red'>$error_type</p>";
+    public function ShowErrors(){
+        print "<p style='color:red'>$this->errors</p>";
     }
 
-    public function ShowInfos($msg){
-        print '<div class="msgs">' . $msg . '</div>';
+    public function ShowInfos(){
+        if($this->count($this->infos)){
+            print '<div class="msgs">' . $this->infos[0] . '</div>';
+        }
     }
-
 }

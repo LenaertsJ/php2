@@ -67,12 +67,18 @@ function MergeViewWithExtraElements( $template, $elements )
     return $template;
 }
 
-function MergeViewWithErrors( $template, $errors )
+function MergeViewWithErrors( $template )
 {
-    foreach ( $errors as $key => $error )
-    {
-        $template = str_replace( "@$key@", "<p style='color:red'>$error</p>", $template );
+    global $ms;
+    $errors = $ms->getInputErrors();
+
+    if($errors != null){
+        foreach ( $errors as $key => $error )
+        {
+            $template = str_replace( "@$key@", "<p style='color:red'>$error</p>", $template );
+        }
     }
+
     return $template;
 }
 

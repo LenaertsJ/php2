@@ -4,11 +4,10 @@
 class Logger
 {
     private $fp;
-    private $logfile;
 
     public function __construct($logfile)
     {
-        $this->fp = fopen($logfile);
+        $this->fp = fopen($logfile, "r+");
     }
 
     public function log($msg){

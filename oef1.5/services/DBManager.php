@@ -1,22 +1,22 @@
 <?php
 
-
 class DBManager
 {
-    private $logger;
+    private $logobject;
+    private $connection;
 
-    public function __construct($logger, $connection){
-        $this->logger = $logger;
+    public function __construct(Logger $logger, Connection $connection){
+        $this->logobject = $logger;
         $this->connection = $connection;
     }
 
     public function CreateConnection()
     {
+        $servername = $this->connection->getServername();
+        $dbname = $this->connection->getDbname();
+        $username = $this->connection->getUsername();
+        $password = $this->connection->getPassword();
         global $conn;
-        $servername =  $this->connection->servername;
-        $dbname = $this->connection->servername;
-        $username = $this->connection->username;
-        $password = $this->connection->password;
 
         // Create and check connection
         try {
@@ -30,9 +30,10 @@ class DBManager
         }
     }
 
-    public function GetData( $sql )
+    public function GetData( string $sql )
     {
         global $conn;
+
 
         $this->CreateConnection();
 
