@@ -5,13 +5,10 @@ ini_set( 'display_errors', 1 );
 $public_access=true;
 require_once "autoload.php";
 
-SaveFormData($container->getMessageService(), $container->getDBManager());
+SaveFormData( $container->getMessageService(), $container->getDBManager() );
 
-function SaveFormData($ms, $dbm)
+function SaveFormData($ms, $dbm )
 {
-
-    global $app_root;
-//    global $dbm;
 
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {

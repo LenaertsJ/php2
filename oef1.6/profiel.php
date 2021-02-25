@@ -1,6 +1,6 @@
 <?php
-//error_reporting( E_ALL );
-//ini_set( 'display_errors', 1 );
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
 
 $public_access = false;
 require_once "lib/autoload.php";
@@ -15,6 +15,7 @@ PrintNavbar();
 
         <?php
             //get data
+            $dbm = $container->getDBManager();
             $data = $dbm->GetData( "select * from user where usr_id=" . $_SESSION['user']->getUsrId() );
 
             //get template
@@ -26,7 +27,7 @@ PrintNavbar();
             //merge
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
-            $output = MergeViewWithErrors( $output, $errors );
+            $output = MergeViewWithErrors( $output );
             $output = RemoveEmptyErrorTags( $output, $data );
 
             print $output;

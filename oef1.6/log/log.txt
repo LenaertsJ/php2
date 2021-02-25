@@ -1,4 +1,7 @@
-2021-02-25 09:10:28am<br>UPDATE images SET  img_title = 'Big Ben'  ,  img_filename = 'london_2423609b.jpg'  ,  img_width = '7896'  ,  img_height = '4577'  ,  img_lan_id = '5'  ,  img_date = '2021-01-31'  WHERE img_id = 3 
+2021-02-25 09:21:48am<br>UPDATE eu_btw_codes SET  eub_land = 'Polen'  ,  eub_code = 'PL'  WHERE eub_id = 21 
+lielenaerts@gmail.com'  ,  usr_telefoon = ''  WHERE usr_id = 22 
+22 
+g_date = '2021-01-31'  WHERE img_id = 3 
 
  = '5'  ,  img_date = '2021-01-31'  WHERE img_id = 3 
 

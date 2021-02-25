@@ -12,7 +12,9 @@ PrintNavbar();
 
 <div class="container">
 
-    <?php echo $logger->showLog(); ?>
+    <?php echo
+
+    $container->getLogger()->showLog(); ?>
 
 </div>
 </body>

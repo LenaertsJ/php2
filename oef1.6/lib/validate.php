@@ -5,10 +5,6 @@ require_once "autoload.php";
 function CompareWithDatabase( $table, $ms, $dbm, $pkey ): void
 {
 
-//    $ms = $container->getMessageService();
-//    $dbm = $container->getDBManager();
-//    global $ms;
-//    global $dbm;
     $data = $dbm->GetData( "SHOW FULL COLUMNS FROM $table" );
 
     //overloop alle in de databank gedefinieerde velden van de tabel
@@ -88,7 +84,7 @@ function CompareWithDatabase( $table, $ms, $dbm, $pkey ): void
 
 function ValidateUsrPassword( $password, $ms )
 {
-//    global $ms;
+
     if ( strlen($password) < 8 )
     {
         $msg = "Het wachtwoord moet minstens 8 tekens bevatten";
@@ -102,7 +98,6 @@ function ValidateUsrPassword( $password, $ms )
 
 function ValidateUsrEmail( $email, $ms )
 {
-//    global $ms;
 
     if (filter_var($email, FILTER_VALIDATE_EMAIL))
     {
@@ -119,8 +114,7 @@ function ValidateUsrEmail( $email, $ms )
 
 function CheckUniqueUsrEmail( $email, $ms, $dbm )
 {
-//    global $dbm;
-//    global $ms;
+
     $sql = "SELECT * FROM user WHERE usr_email='" . $email . "'";
     $rows = $dbm->GetData($sql);
 
