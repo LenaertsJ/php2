@@ -5,7 +5,7 @@ ini_set( 'display_errors', 1 );
 $public_access = true;
 require_once "autoload.php";
 
-$user = LoginCheck();
+$user = LoginCheck($container->getMessageService(), $container->getDBManager());
 
 if ( $user )
 {
@@ -19,11 +19,8 @@ else
     GoToNoAccess();
 }
 
-function LoginCheck()
+function LoginCheck($ms, $dbm)
 {
-
-    $ms = $container->getMessageService();
-    $dbm = $container->getDBManager();
 
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
@@ -45,11 +42,15 @@ function LoginCheck()
         {
             if ( ! key_exists("usr_email", $_POST ) OR strlen($_POST['usr_email']) < 5 )
             {
-                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
+                $msg = "Het wachtwoord is niet correct ingevuld";
+                $ms->AddMessage('input_errors', $msg, 'usr_password' );
+//                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
             }
             if ( ! key_exists("usr_password", $_POST ) OR strlen($_POST['usr_password']) < 8 )
             {
-                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
+                $msg = "Het wachtwoord is niet correct ingevuld";
+                $ms->AddMessage('input_errors', $msg, 'usr_password' );
+//                $_SESSION['errors']['usr_password'] = "Het wachtwoord is niet correct ingevuld";
             }
         }
 

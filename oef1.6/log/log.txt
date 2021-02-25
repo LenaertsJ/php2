@@ -1,5 +1,4 @@
-2021-02-24 05:29:44pm<br>UPDATE images SET  img_title = 'De Muur'  ,  img_filename = 'berlin.jpg'  ,  img_width = '888'  ,  img_height = '78'  ,  img_lan_id = '7'  ,  img_date = '2020-09-14'  WHERE img_id = 1 
-mg_id = 1 
+2021-02-25 09:10:28am<br>UPDATE images SET  img_title = 'Big Ben'  ,  img_filename = 'london_2423609b.jpg'  ,  img_width = '7896'  ,  img_height = '4577'  ,  img_lan_id = '5'  ,  img_date = '2021-01-31'  WHERE img_id = 3 
 
  = '5'  ,  img_date = '2021-01-31'  WHERE img_id = 3 
 

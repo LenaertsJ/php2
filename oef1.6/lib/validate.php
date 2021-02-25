@@ -2,11 +2,11 @@
 require_once "autoload.php";
 
 
-function CompareWithDatabase( $table, $pkey ): void
+function CompareWithDatabase( $table, $ms, $dbm, $pkey ): void
 {
 
-    $ms = $container->getMessageService();
-    $dbm = $container->getDBManager();
+//    $ms = $container->getMessageService();
+//    $dbm = $container->getDBManager();
 //    global $ms;
 //    global $dbm;
     $data = $dbm->GetData( "SHOW FULL COLUMNS FROM $table" );
@@ -86,9 +86,9 @@ function CompareWithDatabase( $table, $pkey ): void
     }
 }
 
-function ValidateUsrPassword( $password )
+function ValidateUsrPassword( $password, $ms )
 {
-    global $ms;
+//    global $ms;
     if ( strlen($password) < 8 )
     {
         $msg = "Het wachtwoord moet minstens 8 tekens bevatten";
@@ -100,9 +100,10 @@ function ValidateUsrPassword( $password )
     return true;
 }
 
-function ValidateUsrEmail( $email )
+function ValidateUsrEmail( $email, $ms )
 {
-    global $ms;
+//    global $ms;
+
     if (filter_var($email, FILTER_VALIDATE_EMAIL))
     {
         return true;
@@ -116,10 +117,10 @@ function ValidateUsrEmail( $email )
     }
 }
 
-function CheckUniqueUsrEmail( $email )
+function CheckUniqueUsrEmail( $email, $ms, $dbm )
 {
-    global $dbm;
-    global $ms;
+//    global $dbm;
+//    global $ms;
     $sql = "SELECT * FROM user WHERE usr_email='" . $email . "'";
     $rows = $dbm->GetData($sql);
 

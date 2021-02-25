@@ -7,7 +7,7 @@ require_once "autoload.php";
 
 SaveFormData();
 
-function SaveFormData()
+function SaveFormData($container)
 {
 
     global $app_root;
@@ -42,18 +42,18 @@ function SaveFormData()
 
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
-        CompareWithDatabase( $table, $pkey );
+        CompareWithDatabase( $table, $container->GetMessageService(), $container->GetDBManager(), $pkey );
 
         //Validaties voor het registratieformulier
         if ( $formname == "register" )
         {
-            ValidateUsrPassword( $_POST['usr_password'] );
-            CheckUniqueUsrEmail( $_POST['usr_email'] );
+            ValidateUsrPassword( $_POST['usr_password'], $container->GetMessageService() );
+            CheckUniqueUsrEmail( $_POST['usr_email'], $container->GetMessageService(), $container->GetDBManager() );
         }
 
         if ( $formname == "profiel" OR $formname == "register" )
         {
-            ValidateUsrEmail( $_POST['usr_email'] );
+            ValidateUsrEmail( $_POST['usr_email'], $container->GetMessageService());
         }
 
         //terugkeren naar afzender als er een fout is

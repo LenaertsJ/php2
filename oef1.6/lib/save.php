@@ -5,13 +5,13 @@ ini_set( 'display_errors', 1 );
 $public_access=true;
 require_once "autoload.php";
 
-SaveFormData();
+SaveFormData($container->getMessageService(), $container->getDBManager());
 
-function SaveFormData()
+function SaveFormData($ms, $dbm)
 {
 
     global $app_root;
-    global $dbm;
+//    global $dbm;
 
     if ( $_SERVER['REQUEST_METHOD'] == "POST" )
     {
@@ -43,18 +43,18 @@ function SaveFormData()
 
         //validation
         $sending_form_uri = $_SERVER['HTTP_REFERER'];
-        CompareWithDatabase( $table, $pkey );
+        CompareWithDatabase( $table, $ms, $dbm, $pkey );
 
         //Validaties voor het registratieformulier
         if ( $formname == "register" )
         {
-            ValidateUsrPassword( $_POST['usr_password'] );
-            CheckUniqueUsrEmail( $_POST['usr_email'] );
+            ValidateUsrPassword( $_POST['usr_password'], $ms );
+            CheckUniqueUsrEmail( $_POST['usr_email'], $ms, $dbm );
         }
 
         if ( $formname == "profiel" OR $formname == "register" )
         {
-            ValidateUsrEmail( $_POST['usr_email'] );
+            ValidateUsrEmail( $_POST['usr_email'], $ms );
         }
 
         //terugkeren naar afzender als er een fout is
