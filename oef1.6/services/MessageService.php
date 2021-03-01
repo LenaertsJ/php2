@@ -1,70 +1,104 @@
 <?php
 
-
 class MessageService
 {
-
     private $errors;
     private $input_errors;
     private $infos;
 
-    public function __construct($e, $ie, $infos) {
-        $this->errors = $e;
-        $this->input_errors = $ie;
-        $this->infos = $infos;
-    }
-
-    //Count function (parameter = $this->errors, $this->input_errors, $this->infos)
-    public function count($error_type){
-        return count($error_type);
-    }
-
-    //Count new errors/msgs
-    public function countNewErrors()
+    public function __construct()
     {
-        return count($_SESSION['errors']);
-
+        $this->errors = $this->LoadMessages("errors");
+        $this->input_errors = $this->LoadMessages("input_errors");
+        $this->infos = $this->LoadMessages("infos");
     }
 
-    public function countNewInputErrors()
+    public function LoadMessages( $type )
     {
-        return count($_SESSION['input_errors']);
+        $returnvalue = null;
 
+        if ( isset( $_SESSION[$type]) )
+        {
+            $returnvalue = $_SESSION[$type];
+            unset($_SESSION[$type]);
+        }
+
+        return $returnvalue;
     }
 
-    public function countNewInfos()
+    public function CountNewErrors()
     {
-        return count($_SESSION['msgs']);
-
+        if ( isset($_SESSION['errors']) AND count($_SESSION['errors']) > 0 ) return count($_SESSION['errors']);
+        else return 0;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getInputErrors()
+    public function CountErrors()
     {
-        if($this->count($this->input_errors)){
-            return $this->input_errors;
-        } else {
-            return null;
+        if ( $this->errors ) return count($this->errors);
+        else return 0;
+    }
+
+    public function CountNewInputErrors()
+    {
+        if ( isset($_SESSION['input_errors']) AND count($_SESSION['input_errors']) > 0 ) return count($_SESSION['input_errors']);
+        else return 0;
+    }
+
+    public function CountInputErrors()
+    {
+        if ( $this->input_errors ) return count($this->input_errors);
+        else return 0;
+    }
+
+    public function GetInputErrors()
+    {
+        return $this->input_errors;
+    }
+
+    public function CountNewInfos()
+    {
+        if ( isset($_SESSION['infos']) AND count($_SESSION['infos']) > 0 ) return count($_SESSION['infos']);
+        else return 0;
+    }
+
+    public function CountInfos()
+    {
+        if ( $this->infos ) return count($this->infos);
+        else return 0;
+    }
+
+    public function AddMessage( $type, $msg, $key = null )
+    {
+        if ( $type == "input_errors" )
+        {
+            $_SESSION[$type][$key] = $msg;
+        }
+        else
+        {
+            $_SESSION[$type][] = $msg;
         }
     }
 
-    public function AddMessage($type, $msg, $key = null){
-        if($type == 'input_errors'){
-            $_SESSION['input_errors'][$key . '_error'] = $msg;
-        } else {
-            $_SESSION[$type] = $msg;
+    public function ShowErrors()
+    {
+        if ( $this->CountErrors() > 0 )
+        {
+            foreach ( $this->errors as $error )
+            {
+                print '<div class="error">' . $error . '</div>';
+            }
         }
     }
 
-    public function ShowErrors(){
-        print "<p style='color:red'>$this->errors</p>";
-    }
-
-    public function ShowInfos(){
-        if($this->count($this->infos)){
-            print '<div class="msgs">' . $this->infos[0] . '</div>';
+    public function ShowInfos()
+    {
+        if ( $this->CountInfos() > 0 )
+        {
+            foreach ( $this->infos as $info )
+            {
+                print '<div class="msgs">' . $info . '</div>';
+            }
         }
     }
+
 }

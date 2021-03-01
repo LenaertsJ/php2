@@ -1,75 +1,91 @@
 <?php
 
-
 class User
 {
-    //Properties
-    private $usr_id;
-    private $usr_voornaam;
-    private $usr_naam;
-    private $usr_email;
-    private $usr_telefoon;
+    private $id;
+    private $voornaam;
+    private $naam;
+    private $email;
+    private $telefoon;
 
-    //Constructor
-    function __construct($usr_id, $usr_email, $usr_voornaam, $usr_naam, $usr_telefoon){
-        $this->usr_id = $usr_id;
-        $this->usr_email = $usr_email;
-        $this->usr_voornaam = $usr_voornaam;
-        $this->usr_naam = $usr_naam;
-        $this->usr_telefoon = $usr_telefoon;
-
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
-
-    //Methods : getters and setters
-    public function getUsrId()
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
     {
-        return $this->usr_id;
+        $this->id = $id;
     }
 
-    public function setUsrId($usr_id)
+    /**
+     * @return mixed
+     */
+    public function getVoornaam()
     {
-        $this->usr_id = $usr_id;
+        return strtoupper( $this->voornaam );
     }
 
-    public function getUsrVoornaam()
+    /**
+     * @param mixed $voornaam
+     */
+    public function setVoornaam($voornaam): void
     {
-        return strtoupper($this->usr_voornaam);
+        $this->voornaam = $voornaam;
     }
 
-    public function setUsrVoornaam($usr_voornaam)
+    /**
+     * @return mixed
+     */
+    public function getNaam()
     {
-        $this->usr_voornaam = $usr_voornaam;
+        return strtoupper( $this->naam );
     }
 
-    public function getUsrNaam()
+    /**
+     * @param mixed $naam
+     */
+    public function setNaam($naam): void
     {
-        return strtoupper($this->usr_naam);
+        $this->naam = $naam;
     }
 
-    public function setUsrNaam($usr_naam)
+    /**
+     * @return mixed
+     */
+    public function getEmail()
     {
-        $this->usr_naam = $usr_naam;
+        return $this->email;
     }
 
-    public function getUsrEmail()
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email): void
     {
-        return $this->usr_email;
+        $this->email = $email;
     }
 
-    public function setUsrEmail($usr_email)
+    /**
+     * @return mixed
+     */
+    public function getTelefoon()
     {
-        $this->usr_email = $usr_email;
+        return $this->telefoon;
     }
 
-    public function getUsrTelefoon()
+    /**
+     * @param mixed $telefoon
+     */
+    public function setTelefoon($telefoon): void
     {
-        return $this->usr_telefoon;
-    }
-
-    public function setUsrTelefoon($usr_telefoon)
-    {
-        $this->usr_telefoon = $usr_telefoon;
+        $this->telefoon = $telefoon;
     }
 
 

@@ -6,7 +6,7 @@ require_once "lib/autoload.php";
 
 PrintHead();
 PrintJumbo( $title = "Leuke plekken in Europa" ,
-            $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
+                        $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
 PrintNavbar();
 ?>
 
@@ -14,21 +14,12 @@ PrintNavbar();
     <div class="row">
 
 <?php
-
-$container = new Container;
-$ms = $container->getMessageService();
-$dbm = $container->getDBManager();
-
     //toon messages als er zijn
-//    foreach ( $msgs as $msg )
-//    {
-//        print '<div class="msgs">' . $msg . '</div>';
-//    }
-
-    $ms->ShowInfos();
+    $container->getMessageService()->ShowErrors();
+    $container->getMessageService()->ShowInfos();
 
     //get data
-    $data = $dbm->GetData( "select * from images" );
+    $data = $container->getDBManager()->GetData( "select * from images" );
 
     //get template
     $template = file_get_contents("templates/column.html");

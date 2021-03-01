@@ -14,18 +14,13 @@ PrintNavbar();
 <div class="container">
     <div class="row">
 
-<?php
+    <?php
     //toon messages als er zijn
-//    $ms = $container->getMessageService();
-//    $ms->
-//    foreach ( $msgs as $msg )
-//    {
-//        print '<div class="msgs">' . $msg . '</div>';
-//    }
+    $container->getMessageService()->ShowErrors();
+    $container->getMessageService()->ShowInfos();
 
     //get data
-    $dbm = $container->getDBManager();
-    $data = $dbm->GetData( "select * from eu_btw_codes" );
+    $data = $container->getDBManager()->GetData( "select * from eu_btw_codes" );
 
     $output ="";
     $output .= "<a class='btn btn-info' role='button' href='lib/export_btw.php'>Export CSV</a>";

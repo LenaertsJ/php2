@@ -15,8 +15,19 @@ PrintNavbar();
 
         <?php
             //get data
-            $dbm = $container->getDBManager();
-            $data = $dbm->GetData( "select * from user where usr_id=" . $_SESSION['user']->getUsrId() );
+            $data = $container->getDBManager()->GetData( "select * from user where usr_id=" . $_SESSION['user']->getId() );
+
+            /*
+            $user = $_SESSION['user'];
+            $data = [];
+            $data[0] = [
+                    "usr_id" => $user->getId(),
+                    "usr_voornaam" => $user->getVoornaam(),
+                    "usr_naam" => $user->getNaam(),
+                    "usr_email" => $user->getEmail(),
+                    "usr_telefoon" => $user->getTelefoon(),
+                ];
+            */
 
             //get template
             $output = file_get_contents("templates/profiel.html");
@@ -27,7 +38,7 @@ PrintNavbar();
             //merge
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
-            $output = MergeViewWithErrors( $output );
+            $output = MergeViewWithErrors( $output, $container->getMessageService()->GetInputErrors() );
             $output = RemoveEmptyErrorTags( $output, $data );
 
             print $output;

@@ -3,99 +3,154 @@
 
 class City
 {
-    //properties
-    private $img_id;
-    private $img_filename;
-    private $img_title;
-    private $img_width;
-    private $img_height;
-    private $img_published;
-    private $img_date;
+    private $id;
+    private $filename;
+    private $title;
+    private $width;
+    private $height;
+    private $published;
+    private $lan_id;
+    private $date;
 
-    //constructor
-
-    function __construct($img_id, $img_filename, $img_title, $img_height, $img_width, $img_published, $img_date)
+    public function getId(): int
     {
-       $this->img_id = $img_id;
-       $this->img_filename = $img_filename;
-       $this->img_title = $img_title;
-       $this->img_width = $img_width;
-       $this->img_height = $img_height;
-       $this->img_published = $img_published;
-       $this->img_date = $img_date;
+        return $this->id;
     }
 
-    //methods: getters and setters
-
-    public function getImgId()
+    public function setId(int $id): void
     {
-        return $this->img_id;
+        $this->id = $id;
     }
 
-    public function setImgId($img_id)
+    public function getFilename(): string
     {
-        $this->img_id = $img_id;
+        return $this->filename;
     }
 
-    public function getImgFilename()
+    public function setFilename($filename): void
     {
-        return $this->img_filename;
+        $this->filename = $filename;
     }
 
-    public function setImgFilename($img_filename)
+    /**
+     * @return mixed
+     */
+    public function getTitle()
     {
-        $this->img_filename = $img_filename;
+        return strtoupper( $this->title );
     }
 
-    public function getImgTitle()
+    /**
+     * @param mixed $title
+     */
+    public function setTitle($title): void
     {
-        return strtoupper($this->img_title);
+        $this->title = $title;
     }
 
-    public function setImgTitle($img_title)
+    /**
+     * @return mixed
+     */
+    public function getWidth()
     {
-        $this->img_title = $img_title;
+        return $this->width;
     }
 
-    public function getImgWidth()
+    /**
+     * @param mixed $width
+     */
+    public function setWidth($width): void
     {
-        return $this->img_width;
+        $this->width = $width;
     }
 
-    public function setImgWidth($img_width)
+    /**
+     * @return mixed
+     */
+    public function getHeight()
     {
-        $this->img_width = $img_width;
+        return $this->height;
     }
 
-    public function getImgHeight()
+    /**
+     * @param mixed $height
+     */
+    public function setHeight($height): void
     {
-        return $this->img_height;
+        $this->height = $height;
     }
 
-    public function setImgHeight($img_height)
+    /**
+     * @return mixed
+     */
+    public function getPublished()
     {
-        $this->img_height = $img_height;
+        return $this->published;
     }
 
-    public function getImgPublished()
+    /**
+     * @param mixed $published
+     */
+    public function setPublished($published): void
     {
-        return $this->img_published;
+        $this->published = $published;
     }
 
-    public function setImgPublished($img_published)
+    /**
+     * @return mixed
+     */
+    public function getLanId()
     {
-        $this->img_published = $img_published;
+        return $this->lan_id;
     }
 
-    public function getImgDate()
+    /**
+     * @param mixed $lan_id
+     */
+    public function setLanId($lan_id): void
     {
-        return $this->img_date;
+        $this->lan_id = $lan_id;
     }
 
-    public function setImgDate($img_date)
+    /**
+     * @return mixed
+     */
+    public function getDate()
     {
-        $this->img_date = $img_date;
+        return $this->date;
     }
 
+    /**
+     * @param mixed $date
+     */
+    public function setDate($date): void
+    {
+        $this->date = $date;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            "id" => $this->getId(),
+            "filename" => $this->getFilename(),
+            "title" => $this->getTitle(),
+            "width" => $this->getWidth(),
+            "height" => $this->getHeight(),
+            "published" => $this->getPublished(),
+            "lan_id" => $this->getLanId(),
+            "date" => $this->getDate()
+        ];
+    }
+
+    public function toArray2(): array
+    {
+        $retarr = [];
+
+        foreach( $this as $key => $value )
+        {
+            $retarr[$key] = $value;
+        }
+        return $retarr;
+    }
 
 }

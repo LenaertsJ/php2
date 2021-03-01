@@ -13,15 +13,15 @@ PrintJumbo( $title = "Bewerk afbeelding", $subtitle = "" );
 
         <?php
             if ( ! is_numeric( $_GET['img_id']) ) die("Ongeldig argument " . $_GET['img_id'] . " opgegeven");
-            $dbm = $container->getDBManager();
 
             //get data
-            $data = $dbm->GetData( "select * from images where img_id=" . $_GET['img_id'] );
+            $data = $container->getDBManager()->GetData( "select * from images where img_id=" . $_GET['img_id'] );
             $row = $data[0]; //there's only 1 row in data
 
             //add extra elements
             $extra_elements['csrf_token'] = GenerateCSRF( "stad_form.php"  );
-            $extra_elements['select_land'] = MakeSelect( $fkey = 'img_lan_id',
+            $extra_elements['select_land'] = MakeSelect( $container->getDBManager(),
+                                                                                            $fkey = 'img_lan_id',
                                                                                             $value = $row['img_lan_id'] ,
                                                                                             $sql = "select lan_id, lan_land from land" );
 
@@ -32,7 +32,7 @@ PrintJumbo( $title = "Bewerk afbeelding", $subtitle = "" );
             //merge
             $output = MergeViewWithData( $output, $data );
             $output = MergeViewWithExtraElements( $output, $extra_elements );
-            $output = MergeViewWithErrors( $output );
+            $output = MergeViewWithErrors( $output, $container->getMessageService()->GetInputErrors() );
             $output = RemoveEmptyErrorTags( $output, $data );
 
             print $output;

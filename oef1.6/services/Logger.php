@@ -1,27 +1,23 @@
 <?php
 
-
 class Logger
 {
-    private $logfile;
     private $fp;
+    private $logfile;
 
-    public function __construct()
+    public function __construct( $logfile )
     {
-        $this->logfile = $_SERVER['DOCUMENT_ROOT'] . "/php2_oefeningen/oef1.6/log/log.txt";
-        $this->fp = fopen($this->logfile, "r+");
+        $this->logfile = $logfile;
+        $this->fp = fopen( $this->logfile, "a+");
     }
 
-    public function log($msg){
-
-        $msg = date("Y-m-d h:i:sa") . "<br>" . $msg . "\r\n";
-        fwrite($this->fp, $msg);
+    public function Log( $msg )
+    {
+        fwrite( $this->fp, $msg . "\r\n" );
     }
 
-    public function ShowLog(){
-
-        $log = file_get_contents($this->logfile);
-        $log = str_replace( "\r\n", "<br>", $log );
-        echo $log;
+    public function ShowLog()
+    {
+        return file_get_contents( $this->logfile );
     }
 }

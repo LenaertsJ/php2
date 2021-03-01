@@ -19,9 +19,11 @@ function PrintNavbar( )
 {
     $navbar = file_get_contents("templates/navbar.html");
 
-    if ( isset($_SESSION['user']))
+    //var_dump($_SESSION['user']); die();
+
+    if ( isset($_SESSION['user']) )
     {
-        $username = $_SESSION['user']->getUsrVoornaam() . " " . $_SESSION['user']->getUsrNaam();
+        $username = $_SESSION['user']->getVoornaam() . " " . $_SESSION['user']->getNaam();
     }
     else
     {
@@ -57,7 +59,6 @@ function MergeViewWithData( $template, $data )
     return $returnvalue;
 }
 
-
 function MergeViewWithExtraElements( $template, $elements )
 {
     foreach ( $elements as $key => $element )
@@ -67,14 +68,10 @@ function MergeViewWithExtraElements( $template, $elements )
     return $template;
 }
 
-function MergeViewWithErrors( $template )
+function MergeViewWithErrors( $template, $errors )
 {
-    $container = new Container;
-    $ms = $container->getMessageService();
-//    global $ms;
-    $errors = $ms->getInputErrors();
-
-    if($errors != null){
+    if ( $errors )
+    {
         foreach ( $errors as $key => $error )
         {
             $template = str_replace( "@$key@", "<p style='color:red'>$error</p>", $template );

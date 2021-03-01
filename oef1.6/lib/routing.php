@@ -1,25 +1,19 @@
 <?php
 
-function GoToNoAccess()
+function GoToNoAccess( $app_root )
 {
-    global $app_root;
-
     header("Location: " . $app_root . "/no_access.php");
     exit;
 }
 
-function GoHome()
+function GoHome( $app_root )
 {
-    global $app_root;
-
     header("Location: " . $app_root . "/steden.php");
     exit;
 }
 
-function GoToPage( $page )
+function GoToPage( $app_root, $page )
 {
-    global $app_root;
-
     header("Location: " . $app_root . "/$page");
     exit;
 }
