@@ -6,7 +6,7 @@ $public_access = false;
 require_once "lib/autoload.php";
 
 PrintHead();
-PrintJumbo( $title = "Contact", $subtitle = "leave us a message" );
+PrintJumbo( $title = "Contact", $subtitle = "Leave us a message" );
 PrintNavbar();
 ?>
 
@@ -14,6 +14,7 @@ PrintNavbar();
     <div class="row">
 
         <?php
+        $container->getMessageService()->ShowInfos();
 
         //get template
         $output = file_get_contents("templates/contactForm.html");

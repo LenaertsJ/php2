@@ -40,3 +40,5 @@
 2021-03-01 14:46:00: select * from user where usr_id=22
 2021-03-01 14:46:28: select * from user where usr_id=22
 2021-03-01 14:46:36: select * from user where usr_id=22
+2021-03-01 17:01:15: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-01 17:01:15: select * from images

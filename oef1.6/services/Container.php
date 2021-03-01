@@ -9,12 +9,19 @@ class Container
     private $logger;
     private $validator;
     private $loginChecker;
+//    private $contact;
 
     public function __construct( string $logfile, array $dbconfig)
     {
         $this->logfile = $logfile;
         $this->dbconfig = $dbconfig;
     }
+
+//    public function sendContactForm(){
+//        if ($this->contact === null){
+//            $this->contact = new Contact();
+//        }
+//    }
 
     public function getMessageService()
     {
