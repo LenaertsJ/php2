@@ -1,18 +1,24 @@
 <?php
 
 
-class Contact
+class Contact implements userFeedback
 {
     private $mailheader;
     private $subject;
     private $content;
     private $receiver;
+    private $name;
 
     public function __construct($name, $email, $subject, $message){
         $this->content = "From: $name  \n Email: $email  \n Message: $message .";
         $this->mailheader = "From: $email \r\n";
         $this->subject = $subject;
         $this->receiver = "julielenaerts@gmail.com";
+    }
+
+    public function getName()
+    {
+        return $this->name;
     }
 
     public function sendMail(){
