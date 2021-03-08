@@ -1,0 +1,121 @@
+2021-02-10 22:53:49: SELECT * FROM user WHERE usr_email='anton@verlinden.be' 
+2021-02-10 22:53:51: select * from images
+2021-02-10 22:53:55: select * from eu_btw_codes
+2021-02-10 22:53:59: select * from eu_btw_codes where eub_id=1
+2021-02-10 22:54:05: SHOW FULL COLUMNS FROM eu_btw_codes
+2021-02-10 22:54:07: UPDATE eu_btw_codes SET  eub_land = 'België'  ,  eub_code = 'BE1234567'  WHERE eub_id = 1 
+2021-02-10 22:54:09: select * from eu_btw_codes
+2021-02-10 22:54:14: select * from images
+2021-02-10 23:36:50: select * from eu_btw_codes
+2021-02-10 23:36:54: select * from images
+2021-02-10 23:37:02: select * from user where usr_id=3
+2021-02-10 23:37:07: select * from images
+2021-02-12 00:22:52: SELECT * FROM user WHERE usr_email='anton@verlinden.be' 
+2021-02-12 00:22:54: select * from images
+2021-02-12 00:24:18: select * from images
+2021-02-12 00:25:24: select * from images
+2021-02-12 00:25:28: select * from eu_btw_codes
+2021-02-12 00:25:33: select * from eu_btw_codes where eub_id=1
+2021-02-12 00:25:38: SHOW FULL COLUMNS FROM eu_btw_codes
+2021-02-12 00:27:32: select * from eu_btw_codes where eub_id=1
+2021-02-12 00:27:40: SHOW FULL COLUMNS FROM eu_btw_codes
+2021-02-12 00:27:42: UPDATE eu_btw_codes SET  eub_land = 'België'  ,  eub_code = 'BE12'  WHERE eub_id = 1 
+2021-02-12 00:27:42: select * from eu_btw_codes
+2021-02-12 00:27:49: select * from images
+2021-02-12 00:27:54: select * from images where img_id=2
+2021-02-12 00:27:56: select lan_id, lan_land from land
+2021-02-12 00:28:02: SHOW FULL COLUMNS FROM images
+2021-02-12 00:28:04: UPDATE images SET  img_title = 'De Eiffeltoren'  ,  img_filename = 'paris.jpg'  ,  img_width = '888'  ,  img_height = '777'  ,  img_lan_id = '6'  ,  img_date = '2020-09-14'  WHERE img_id = 2 
+2021-02-12 00:28:04: select * from images
+2021-02-12 00:28:15: select * from images
+2021-02-12 00:28:20: select * from images where img_id=1
+2021-02-12 00:28:22: select lan_id, lan_land from land
+2021-02-12 00:28:25: select * from images
+2021-02-12 00:28:30: select * from images
+2021-02-12 00:53:36: SELECT * FROM user WHERE usr_email='anton@verlinden.be' 
+2021-02-12 00:53:38: select * from images
+2021-03-01 14:39:58: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-01 14:40:53: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-01 14:40:53: select * from images
+2021-03-01 14:46:00: select * from user where usr_id=22
+2021-03-01 14:46:28: select * from user where usr_id=22
+2021-03-01 14:46:36: select * from user where usr_id=22
+2021-03-01 17:01:15: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-01 17:01:15: select * from images
+2021-03-08 18:51:53: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-08 18:51:53: select * from images
+2021-03-08 18:51:56: select * from images where img_id=2
+2021-03-08 18:51:56: select lan_id, lan_land from land
+2021-03-08 18:52:02: select * from images
+2021-03-08 18:52:20: select * from user where usr_id=22
+2021-03-08 18:52:27: select * from images
+2021-03-08 18:56:27: select * from images where img_id=2
+2021-03-08 18:56:27: select lan_id, lan_land from land
+2021-03-08 18:56:31: SHOW FULL COLUMNS FROM images
+2021-03-08 18:56:31: UPDATE images SET  img_title = 'Parijs'  ,  img_filename = 'paris.jpg'  ,  img_width = '888'  ,  img_height = '777'  ,  img_lan_id = '3'  ,  img_date = '2020-09-14'  WHERE img_id = 2 
+2021-03-08 18:56:31: select * from images
+2021-03-08 18:56:33: select * from images where img_id=2
+2021-03-08 18:56:33: select lan_id, lan_land from land
+2021-03-08 19:47:04: select * from images
+2021-03-08 19:47:36: select * from images where img_id=2
+2021-03-08 19:47:36: select lan_id, lan_land from land
+2021-03-08 19:47:45: select * from attractions where att_img_id=2
+2021-03-08 19:47:45: select rate_id, rate_body from rating
+2021-03-08 19:48:45: select * from attractions where att_img_id=2
+2021-03-08 19:48:45: select rate_id, rate_body from rating
+2021-03-08 19:49:05: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:49:05: UPDATE attractions SET  att_title = 'Parijs'  ,  att_rate_id = '4'  WHERE att_id = 2 
+2021-03-08 19:49:05: select * from images
+2021-03-08 19:49:08: select * from images where img_id=2
+2021-03-08 19:49:08: select lan_id, lan_land from land
+2021-03-08 19:49:19: select * from attractions where att_img_id=2
+2021-03-08 19:49:19: select rate_id, rate_body from rating
+2021-03-08 19:50:16: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:50:16: UPDATE attractions SET  att_title = 'De Eifeltoren'  ,  att_rate_id = '4'  WHERE att_id = 2 
+2021-03-08 19:50:16: select * from images
+2021-03-08 19:50:30: select * from images where img_id=1
+2021-03-08 19:50:30: select lan_id, lan_land from land
+2021-03-08 19:50:34: SHOW FULL COLUMNS FROM images
+2021-03-08 19:50:34: UPDATE images SET  img_title = 'Berlijn'  ,  img_filename = 'berlin.jpg'  ,  img_width = '888'  ,  img_height = '78'  ,  img_lan_id = '7'  ,  img_date = '2020-09-14'  WHERE img_id = 1 
+2021-03-08 19:50:34: select * from images
+2021-03-08 19:50:36: select * from images where img_id=3
+2021-03-08 19:50:36: select lan_id, lan_land from land
+2021-03-08 19:50:40: SHOW FULL COLUMNS FROM images
+2021-03-08 19:50:40: UPDATE images SET  img_title = 'London'  ,  img_filename = 'london.jpg'  ,  img_width = '7896'  ,  img_height = '4577'  ,  img_lan_id = '5'  ,  img_date = '2021-01-31'  WHERE img_id = 3 
+2021-03-08 19:50:40: select * from images
+2021-03-08 19:51:37: select * from images
+2021-03-08 19:51:47: select * from images
+2021-03-08 19:51:49: select * from attractions where att_img_id=1
+2021-03-08 19:51:49: select rate_id, rate_body from rating
+2021-03-08 19:52:03: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:52:03: UPDATE attractions SET  att_title = 'De Muur van Berlijn'  ,  att_rate_id = '5'  WHERE att_id = 1 
+2021-03-08 19:52:03: select * from images
+2021-03-08 19:52:04: select * from attractions where att_img_id=1
+2021-03-08 19:52:04: select rate_id, rate_body from rating
+2021-03-08 19:52:50: select * from attractions where att_img_id=1
+2021-03-08 19:52:50: select rate_id, rate_body from rating
+2021-03-08 19:52:56: select * from images
+2021-03-08 19:52:59: select * from attractions where att_img_id=1
+2021-03-08 19:52:59: select rate_id, rate_body from rating
+2021-03-08 19:53:02: select * from images
+2021-03-08 19:53:04: select * from attractions where att_img_id=3
+2021-03-08 19:53:04: select rate_id, rate_body from rating
+2021-03-08 19:53:17: select * from attractions where att_img_id=3
+2021-03-08 19:53:17: select rate_id, rate_body from rating
+2021-03-08 19:53:22: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:53:22: UPDATE attractions SET  att_title = 'Big Ben'  ,  att_rate_id = '2'  WHERE att_id = 3 
+2021-03-08 19:53:22: select * from images
+2021-03-08 19:54:15: select * from images
+2021-03-08 19:54:17: select * from attractions where att_img_id=2
+2021-03-08 19:54:17: select rate_id, rate_body from rating
+2021-03-08 19:54:24: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:54:24: UPDATE attractions SET  att_title = 'De Eifeltoren'  ,  att_rate_id = '1'  WHERE att_id = 2 
+2021-03-08 19:54:24: select * from images
+2021-03-08 19:54:29: select * from attractions where att_img_id=2
+2021-03-08 19:54:29: select rate_id, rate_body from rating
+2021-03-08 19:54:32: SHOW FULL COLUMNS FROM attractions
+2021-03-08 19:54:32: UPDATE attractions SET  att_title = 'De Eifeltoren'  ,  att_rate_id = '3'  WHERE att_id = 2 
+2021-03-08 19:54:32: select * from images
+2021-03-08 19:54:37: select * from attractions where att_img_id=2
+2021-03-08 19:54:37: select rate_id, rate_body from rating
+2021-03-08 19:54:49: select * from images

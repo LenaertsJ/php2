@@ -1,7 +1,7 @@
 <?php
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/Destination.php";
 
-
-class City
+class City extends Destination
 {
     private $id;
     private $filename;
