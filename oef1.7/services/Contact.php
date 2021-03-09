@@ -1,7 +1,7 @@
 <?php
 
 
-class Contact implements userFeedback
+class Contact
 {
     private $mailheader;
     private $subject;

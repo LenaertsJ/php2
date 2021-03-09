@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="584d5f1c-66c1-44bb-8f51-b383d7c06e8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.7/models/Attraction.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.7/models/Attraction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.7/models/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.7/models/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef1.7/models/Destination.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.7/models/Destination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.7/services/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.7/services/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.7/services/userFeedback.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +38,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -70,7 +69,7 @@
       <workItem from="1614248589010" duration="3465000" />
       <workItem from="1614607849565" duration="6440000" />
       <workItem from="1615225574939" duration="6785000" />
-      <workItem from="1615280025779" duration="667000" />
+      <workItem from="1615280025779" duration="3354000" />
     </task>
     <servers />
   </component>
@@ -83,10 +82,14 @@
     </state>
     <state x="505" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.824/-1920.-19.1920.1057@0.23.1440.824" timestamp="1615227179610" />
     <state x="505" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.824@0.23.1440.824" timestamp="1614001586838" />
-    <state x="362" y="170" key="NewPhpClassDialog" timestamp="1615233756273">
+    <state x="555" y="259" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615281772106">
       <screen x="0" y="23" width="1440" height="824" />
     </state>
-    <state x="362" y="170" key="NewPhpClassDialog/0.23.1440.824/-1920.-19.1920.1057@0.23.1440.824" timestamp="1615233756273" />
+    <state x="555" y="259" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.824/-1920.-19.1920.1057@0.23.1440.824" timestamp="1615281772106" />
+    <state x="362" y="170" key="NewPhpClassDialog" timestamp="1615283530211">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="362" y="170" key="NewPhpClassDialog/0.23.1440.824/-1920.-19.1920.1057@0.23.1440.824" timestamp="1615283530211" />
     <state x="362" y="170" key="NewPhpClassDialog/0.23.1440.824@0.23.1440.824" timestamp="1612428780289" />
     <state x="362" y="179" key="NewPhpClassDialog/0.23.1440.877/-1920.-19.1920.1004@0.23.1440.877" timestamp="1612882657084" />
     <state x="539" y="365" key="NewPhpFileDialog" timestamp="1615230036621">
