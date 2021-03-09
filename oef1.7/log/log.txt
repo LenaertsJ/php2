@@ -119,3 +119,15 @@
 2021-03-08 19:54:37: select * from attractions where att_img_id=2
 2021-03-08 19:54:37: select rate_id, rate_body from rating
 2021-03-08 19:54:49: select * from images
+2021-03-09 09:10:15: select * from attractions where att_img_id=2
+2021-03-09 09:10:15: select rate_id, rate_body from rating
+2021-03-09 09:10:18: select * from images
+2021-03-09 09:11:31: select * from images
+2021-03-09 09:11:34: select * from attractions where att_img_id=3
+2021-03-09 09:11:34: select rate_id, rate_body from rating
+2021-03-09 09:11:40: SHOW FULL COLUMNS FROM attractions
+2021-03-09 09:11:40: UPDATE attractions SET  att_title = 'Big Ben'  ,  att_rate_id = '1'  WHERE att_id = 3 
+2021-03-09 09:11:40: select * from images
+2021-03-09 09:11:42: select * from attractions where att_img_id=3
+2021-03-09 09:11:42: select rate_id, rate_body from rating
+2021-03-09 09:11:45: select * from images
