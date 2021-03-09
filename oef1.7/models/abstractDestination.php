@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class Destination
+abstract class abstractDestination
 {
     protected $id;
     protected $filename;

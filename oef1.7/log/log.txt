@@ -131,3 +131,17 @@
 2021-03-09 09:11:42: select * from attractions where att_img_id=3
 2021-03-09 09:11:42: select rate_id, rate_body from rating
 2021-03-09 09:11:45: select * from images
+2021-03-09 10:07:24: select * from attractions where att_img_id=2
+2021-03-09 10:07:24: select rate_id, rate_body from rating
+2021-03-09 10:07:29: select * from images
+2021-03-09 10:13:06: select * from attractions where att_img_id=2
+2021-03-09 10:13:06: select rate_id, rate_body from rating
+2021-03-09 10:13:11: SHOW FULL COLUMNS FROM attractions
+2021-03-09 10:13:11: UPDATE attractions SET  att_title = 'De Eifeltoren'  ,  att_rate_id = '4'  WHERE att_id = 2 
+2021-03-09 10:13:11: select * from images
+2021-03-09 10:15:15: select * from images
+2021-03-09 10:15:17: select * from attractions where att_img_id=1
+2021-03-09 10:15:17: select rate_id, rate_body from rating
+2021-03-09 10:15:28: SHOW FULL COLUMNS FROM attractions
+2021-03-09 10:15:28: UPDATE attractions SET  att_title = 'De Muur van Berlijn'  ,  att_rate_id = '4'  WHERE att_id = 1 
+2021-03-09 10:15:28: select * from images

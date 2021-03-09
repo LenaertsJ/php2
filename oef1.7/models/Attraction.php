@@ -1,7 +1,7 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/Destination.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/abstractDestination.php";
 
-class Attraction extends Destination
+class Attraction extends abstractDestination
 {
 
     private $rating;
