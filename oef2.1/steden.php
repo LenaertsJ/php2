@@ -26,25 +26,26 @@ PrintNavbar();
     //get data
     $data = $container->getDBManager()->GetData( "select * from images" );
 
+    //get weather
+    foreach ($data as $key=>$row){
+
+        $city = $row['img_weather_location'];
+
+        $weather = new Weather($city, $container);
+
+        $row['description'] = $weather->getWeatherDescription();
+        $row['humidity'] = $weather->getHumidity();
+        $row['temp'] = $weather->getTemperature();
+
+        $data[$key] = $row;
+
+        }
 
     //get template
     $template = file_get_contents("templates/column.html");
 
     //merge
     $output = MergeViewWithData( $template, $data );
-
-    //get weather
-    foreach ($data as $row){
-
-        $city = $row['img_weather_location'];
-
-        $weather = new Weather($city, $container);
-
-        $output = str_replace( "@description@", $weather->getWeatherDescription(), $output);
-        $output = str_replace( "@degrees@", $weather->getTemperature(), $output);
-        $output = str_replace( "@humidity@", $weather->getHumidity(), $output);
-
-    }
 
     print $output;
 ?>
