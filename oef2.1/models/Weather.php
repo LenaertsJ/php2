@@ -7,14 +7,14 @@ class Weather
     private $restClient;
     private $dataObject;
 
-    public function __construct($city, Container $container)
+    public function __construct($city, $restClient, $apiKey)
     {
-        $this->url = "https://api.openweathermap.org/data/2.5/weather?q=" . $city . "&units=metric&appid=9b039f5f8e87ca08403eaa4379945109&lang=nl";
-        $this->restClient = $container->getRestClient();
-        $this->dataObject = $this->getDataObject();
+        $this->url = "https://api.openweathermap.org/data/2.5/weather?q=" . $city . "&units=metric&appid=" . $apiKey . "&lang=nl";
+        $this->restClient = $restClient;
+        $this->dataObject = $this->getWeatherObject();
     }
 
-    public function getDataObject(){
+    public function getWeatherObject(){
         $this->restClient->CurlInit($this->url);
         $response = $this->restClient->CurlExec();
         return json_decode($response);

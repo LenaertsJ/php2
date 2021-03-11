@@ -244,3 +244,6 @@
 2021-03-10 18:39:13: select * from images
 2021-03-10 18:39:16: select * from images
 2021-03-10 18:39:32: select * from images
+2021-03-11 10:50:40: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-11 10:50:41: select * from images
+2021-03-11 10:50:58: select * from images

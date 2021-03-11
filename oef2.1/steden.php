@@ -6,8 +6,7 @@ require_once "lib/autoload.php";
 require_once "models/Weather.php";
 
 PrintHead();
-PrintJumbo( $title = "Leuke plekken in Europa" ,
-                        $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
+PrintJumbo( $title = "Leuke plekken in Europa" , $subtitle = "Tips voor citytrips voor vrolijke vakantiegangers!" );
 PrintNavbar();
 ?>
 
@@ -21,7 +20,7 @@ PrintNavbar();
     $container->getMessageService()->ShowInfos();
 
     //setup restClient
-    $restClient = $container->getRestClient();
+//    $restClient = $container->getRestClient();
 
     //get data
     $data = $container->getDBManager()->GetData( "select * from images" );
@@ -31,7 +30,7 @@ PrintNavbar();
 
         $city = $row['img_weather_location'];
 
-        $weather = new Weather($city, $container);
+        $weather = new Weather($city, $container->getRestClient(), $apiKey);
 
         $row['description'] = $weather->getWeatherDescription();
         $row['humidity'] = $weather->getHumidity();
