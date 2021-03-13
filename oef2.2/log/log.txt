@@ -247,3 +247,30 @@
 2021-03-11 10:50:40: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
 2021-03-11 10:50:41: select * from images
 2021-03-11 10:50:58: select * from images
+2021-03-13 17:11:51: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-13 17:11:51: select * from images
+2021-03-13 17:11:58: select * from eu_btw_codes
+2021-03-13 17:34:29: select * from eu_btw_codes
+2021-03-13 17:34:53: select * from eu_btw_codes
+2021-03-13 17:35:04: select * from eu_btw_codes
+2021-03-13 17:36:18: select * from eu_btw_codes
+2021-03-13 17:39:59: select * from eu_btw_codes where eub_id='1'
+2021-03-13 17:42:55: INSERT INTO eu_btw_codes SET eub_code='VSA', eub_land='Verenigde Staten van Amerika' 
+2021-03-13 17:45:40: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:47:01: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:51:10: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:51:38: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:53:17: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:54:28: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 17:54:41: UPDATE eu_btw_codes SET eub_code='', eub_land='' WHERE eub_id='1'
+2021-03-13 18:01:16: INSERT INTO eu_btw_codes SET eub_code='CU', eub_land='Cuba' 
+2021-03-13 18:09:02: UPDATE eu_btw_codes SET eub_code='BE', eub_land='België' WHERE eub_id='1'
+2021-03-13 18:10:07: select * from images
+2021-03-13 18:11:53: UPDATE eu_btw_codes SET eub_code='BL', eub_land='BElgië' WHERE eub_id='1'
+2021-03-13 18:12:10: UPDATE eu_btw_codes SET eub_code='BE', eub_land='België' WHERE eub_id='1'
+2021-03-13 18:13:10: DELETE FROM eu_btw_codes WHERE eub_id='31'
+2021-03-13 18:13:21: DELETE FROM eu_btw_codes WHERE eub_id='30'
+2021-03-13 18:28:14: select * from eu_btw_codes
+2021-03-13 18:31:53: select * from eu_btw_codes
+2021-03-13 18:31:58: select * from eu_btw_codes where eub_id='belgie'
+2021-03-13 18:42:26: UPDATE eu_btw_codes SET eub_code='BE', eub_land='BElgië' WHERE eub_id='1'
