@@ -374,3 +374,63 @@
 2021-03-15 20:07:37: select * from eu_btw_codes
 2021-03-15 20:09:35: select * from eu_btw_codes
 2021-03-15 20:09:48: select * from eu_btw_codes
+2021-03-15 20:11:58: select * from eu_btw_codes
+2021-03-15 20:12:11: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:12:16: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:13:11: select * from eu_btw_codes
+2021-03-15 20:13:18: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:14:19: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:20:19: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:37:47: DELETE FROM eu_btw_codes WHERE eub_id='32'
+2021-03-15 20:38:28: DELETE FROM eu_btw_codes WHERE eub_id='37'
+2021-03-15 20:38:47: DELETE FROM eu_btw_codes WHERE eub_id='38'
+2021-03-15 20:47:44: select * from eu_btw_codes
+2021-03-15 20:48:06: select * from eu_btw_codes
+2021-03-15 20:48:07: select * from eu_btw_codes
+2021-03-15 20:48:08: select * from eu_btw_codes
+2021-03-15 20:48:13: select * from eu_btw_codes
+2021-03-15 20:49:42: select * from eu_btw_codes
+2021-03-15 20:50:02: select * from eu_btw_codes
+2021-03-15 20:51:19: select * from eu_btw_codes
+2021-03-15 20:52:05: select * from eu_btw_codes
+2021-03-15 20:54:11: select * from eu_btw_codes
+2021-03-15 20:55:24: select * from eu_btw_codes
+2021-03-15 20:57:21: select * from eu_btw_codes
+2021-03-15 20:58:51: select * from eu_btw_codes
+2021-03-15 20:59:35: select * from eu_btw_codes
+2021-03-15 20:59:56: select * from eu_btw_codes
+2021-03-15 21:00:06: select * from eu_btw_codes
+2021-03-15 21:00:18: select * from eu_btw_codes
+2021-03-15 21:01:21: select * from eu_btw_codes
+2021-03-15 21:03:13: select * from eu_btw_codes
+2021-03-15 21:04:00: select * from eu_btw_codes
+2021-03-15 21:04:02: select * from eu_btw_codes
+2021-03-15 21:04:09: select * from eu_btw_codes
+2021-03-15 21:04:30: select * from eu_btw_codes
+2021-03-15 21:05:17: select * from eu_btw_codes
+2021-03-15 21:05:52: select * from eu_btw_codes
+2021-03-15 21:06:37: select * from eu_btw_codes
+2021-03-15 21:08:38: select * from eu_btw_codes
+2021-03-15 21:08:41: select * from eu_btw_codes
+2021-03-15 21:09:38: select * from eu_btw_codes
+2021-03-15 21:10:36: select * from eu_btw_codes
+2021-03-15 21:12:03: select * from eu_btw_codes
+2021-03-15 21:12:30: select * from eu_btw_codes
+2021-03-15 21:12:32: select * from eu_btw_codes
+2021-03-15 21:15:29: select * from eu_btw_codes
+2021-03-15 21:15:42: select * from eu_btw_codes
+2021-03-15 21:15:58: select * from eu_btw_codes
+2021-03-15 21:16:46: select * from eu_btw_codes
+2021-03-15 21:17:17: select * from eu_btw_codes
+2021-03-15 21:17:46: select * from eu_btw_codes
+2021-03-15 21:18:02: select * from eu_btw_codes
+2021-03-15 21:18:11: select * from eu_btw_codes
+2021-03-15 21:18:19: select * from eu_btw_codes
+2021-03-15 21:19:36: select * from eu_btw_codes
+2021-03-15 21:20:04: select * from eu_btw_codes
+2021-03-15 21:20:17: select * from eu_btw_codes
+2021-03-15 21:23:17: select * from eu_btw_codes
+2021-03-15 21:25:31: select * from eu_btw_codes
+2021-03-15 21:27:07: select * from eu_btw_codes
+2021-03-15 21:30:08: select * from eu_btw_codes
+2021-03-15 21:30:51: select * from eu_btw_codes

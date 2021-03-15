@@ -27,6 +27,22 @@ if ( count($parts) > $i + 4 ) $id = $parts[$i + 4];
 
 $dbManager = $container->getDBManager();
 
+if ($request_part != "btwcodes" AND $request_part != "btwcode")
+{
+    print json_encode( ["Deze combinatie van Resource en Method is niet toegelaten." ]);
+    http_response_code(418);
+    die;
+}
+
+if ($request_part !== "btwcode" AND isset($id))
+{
+    print json_encode( ["Deze combinatie van Resource en Method is niet toegelaten." ]);
+    http_response_code(418);
+    die;
+}
+
+
+// CONTROLE ID
 if ( $request_part == "btwcode" AND !is_numeric( $parts[$i + 4] )){
     http_response_code(418);
     die("Ongeldig argument " . $parts[$i + 4] . " opgegeven");

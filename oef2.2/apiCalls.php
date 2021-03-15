@@ -7,7 +7,7 @@ $public_access = false;
 require_once "lib/autoload.php";
 
 PrintHead();
-PrintJumbo( $title = "BTW Codes in Europa" ,
+PrintJumbo( $title = "BTW Codes" ,
                         $subtitle = "" );
 PrintNavbar();
 ?>
@@ -20,14 +20,14 @@ PrintNavbar();
 </head>
 
 <body>
+    <div class="container">
+        <div class="col-12 mt-5">
 
-    <div class="col-sm-9 mt-5">
-
-        <div class="col-sm-6">
-            <button class="btn btn-success mb-4" id="show_codes">Get BTW Codes</button>
+        <div class="col-sm-9">
+            <button class="btn btn-info mb-4" id="show_codes">Get BTW Codes</button>
         </div>
 
-        <ul id="codes" class="mb-4"></ul>
+        <ul id="codes" class="list-group mb-4"></ul>
 
     <form class="frmStandard" id="mainform" name="mainform" method="POST" action="http://localhost/php2_oefeningen/oef2.2/api/btwcodes">
 
@@ -48,21 +48,21 @@ PrintNavbar();
         <div class="form-group row">
             <label for="eub_land" class="col-sm-1 col-form-label">Land</label>
             <div class="col-sm-3">
-                <input type="text" required class="form-control-plaintext" id="eub_land" name="eub_land" placeholder="Land">
+                <input type="text" required class="form-control-plaintext" id="eub_land" name="eub_land" value="" placeholder="Land">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="eub_code" class="col-sm-1 col-form-label">Code</label>
             <div class="col-sm-3">
-                <input type="text" required class="form-control-plaintext" id="eub_code" name="eub_code" placeholder="BTW Code">
+                <input type="text" required class="form-control-plaintext" id="eub_code" name="eub_code" value="" placeholder="BTW Code">
             </div>
         </div>
 
         <div class="form-group row">
             <label class="col-sm-1 col-form-label"></label>
             <div class="col-sm-6">
-                <input class="btn btn-success" id="addBtn" type="submit" value="Voeg toe">
+                <input class="btn btn-info" id="addBtn" type="submit" value="Voeg toe">
             </div>
         </div>
 
@@ -70,5 +70,5 @@ PrintNavbar();
 
 
     <script src="js/apiCalls.js"> </script>
-
+    </div>
 </body>
