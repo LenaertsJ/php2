@@ -21,53 +21,46 @@ PrintNavbar();
 
 <body>
     <div class="container">
-        <div class="col-12 mt-5">
-
-        <div class="col-sm-9">
-            <button class="btn btn-info mb-4" id="show_codes">Get BTW Codes</button>
+        <div class="row">
+            <div class="col-sm-12 text-center mb-3">
+                <button class="btn btn-info" id="show_codes">Get all BTW Codes</button>
+            </div>
         </div>
 
-        <ul id="codes" class="list-group mb-4"></ul>
+        <div class="row">
+            <ul id="codes" class="list-group mb-4 mt-4 col-sm-12"></ul>
+        </div>
 
-    <form class="frmStandard" id="mainform" name="mainform" method="POST" action="http://localhost/php2_oefeningen/oef2.2/api/btwcodes">
+
+    <div class="row mt-5 mb-5 p-5 border border-info rounded-top">
+
+    <form class="frmStandard col-sm-12" id="mainform" name="mainform" method="POST" action="http://localhost/php2_oefeningen/oef2.2/api/btwcodes">
 
         <!-- meta info -->
         <input type="hidden" id="formname" name="formname" value="btw_land">
-<!--        <input type="hidden" id="table" name="table" value="eu_btw_codes">-->
-<!--        <input type="hidden" id="pkey" name="pkey" value="eub_id">-->
-<!--        <input type="hidden" id="afterinsert" name="afterinsert" value="btw.php">-->
-<!--        <input type="hidden" id="afterupdate" name="afterupdate" value="btw.php">-->
-<!--        <input type="hidden" id="aftercancel" name="aftercancel" value="btw.php">-->
-        <!-- end meta info -->
-
-        <!--security-->
-<!--        <input type="hidden" name="csrf" value="@csrf_token@">-->
-<!--        <input type="hidden" id="eub_id" name="eub_id" value="@eub_id@">-->
-        <!--end security-->
 
         <div class="form-group row">
             <label for="eub_land" class="col-sm-1 col-form-label">Land</label>
-            <div class="col-sm-3">
+            <div class="col-sm-10">
                 <input type="text" required class="form-control-plaintext" id="eub_land" name="eub_land" value="" placeholder="Land">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="eub_code" class="col-sm-1 col-form-label">Code</label>
-            <div class="col-sm-3">
+            <div class="col-sm-10">
                 <input type="text" required class="form-control-plaintext" id="eub_code" name="eub_code" value="" placeholder="BTW Code">
             </div>
         </div>
 
         <div class="form-group row">
-            <label class="col-sm-1 col-form-label"></label>
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <input class="btn btn-info" id="addBtn" type="submit" value="Voeg toe">
             </div>
         </div>
 
     </form>
-
+    </div>
 
     <script src="js/apiCalls.js"> </script>
     </div>
