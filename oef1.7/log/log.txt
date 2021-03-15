@@ -162,3 +162,4 @@
 2021-03-09 10:33:54: UPDATE attractions SET  att_title = 'De Eifeltoren'  ,  att_rate_id = '3'  WHERE att_id = 2 
 2021-03-09 10:33:54: select * from images
 2021-03-09 10:35:12: select * from images
+2021-03-15 09:07:17: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 

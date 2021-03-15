@@ -274,3 +274,103 @@
 2021-03-13 18:31:53: select * from eu_btw_codes
 2021-03-13 18:31:58: select * from eu_btw_codes where eub_id='belgie'
 2021-03-13 18:42:26: UPDATE eu_btw_codes SET eub_code='BE', eub_land='BElgië' WHERE eub_id='1'
+2021-03-15 09:04:35: select * from eu_btw_codes
+2021-03-15 09:05:07: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-15 09:07:01: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-15 09:29:29: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-15 09:29:30: select * from images
+2021-03-15 09:29:34: select * from eu_btw_codes
+2021-03-15 09:29:35: select * from eu_btw_codes where eub_id=1
+2021-03-15 09:29:43: SHOW FULL COLUMNS FROM eu_btw_codes
+2021-03-15 09:29:43: UPDATE eu_btw_codes SET  eub_land = 'België'  ,  eub_code = 'BE'  WHERE eub_id = 1 
+2021-03-15 09:29:43: select * from eu_btw_codes
+2021-03-15 09:29:45: select * from eu_btw_codes where eub_id=1
+2021-03-15 09:29:50: select * from eu_btw_codes
+2021-03-15 18:08:51: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-15 18:08:52: select * from images
+2021-03-15 18:12:00: select * from eu_btw_codes
+2021-03-15 18:32:17: select * from eu_btw_codes
+2021-03-15 18:36:06: select * from eu_btw_codes
+2021-03-15 18:37:23: select * from eu_btw_codes
+2021-03-15 18:38:59: select * from eu_btw_codes
+2021-03-15 18:47:07: select * from eu_btw_codes
+2021-03-15 18:52:46: select * from eu_btw_codes
+2021-03-15 18:53:18: select * from eu_btw_codes
+2021-03-15 18:53:37: select * from eu_btw_codes
+2021-03-15 18:53:45: select * from eu_btw_codes
+2021-03-15 18:54:06: select * from eu_btw_codes
+2021-03-15 18:54:16: select * from eu_btw_codes
+2021-03-15 18:54:56: select * from eu_btw_codes
+2021-03-15 18:55:54: select * from eu_btw_codes
+2021-03-15 18:56:35: select * from eu_btw_codes
+2021-03-15 18:57:13: select * from eu_btw_codes
+2021-03-15 18:57:26: select * from eu_btw_codes
+2021-03-15 18:57:59: select * from eu_btw_codes
+2021-03-15 18:58:26: select * from eu_btw_codes
+2021-03-15 18:59:47: select * from eu_btw_codes
+2021-03-15 18:59:52: select * from eu_btw_codes
+2021-03-15 18:59:54: select * from eu_btw_codes where eub_id=1
+2021-03-15 19:00:10: select * from eu_btw_codes
+2021-03-15 19:01:14: select * from eu_btw_codes
+2021-03-15 19:01:55: select * from eu_btw_codes
+2021-03-15 19:01:56: select * from eu_btw_codes
+2021-03-15 19:02:17: select * from eu_btw_codes
+2021-03-15 19:02:17: select * from eu_btw_codes
+2021-03-15 19:03:06: select * from eu_btw_codes
+2021-03-15 19:03:31: select * from eu_btw_codes
+2021-03-15 19:03:58: select * from eu_btw_codes
+2021-03-15 19:04:11: select * from eu_btw_codes
+2021-03-15 19:04:29: select * from eu_btw_codes
+2021-03-15 19:04:37: select * from eu_btw_codes
+2021-03-15 19:04:50: select * from eu_btw_codes
+2021-03-15 19:04:58: select * from eu_btw_codes
+2021-03-15 19:05:02: select * from eu_btw_codes
+2021-03-15 19:05:30: select * from eu_btw_codes
+2021-03-15 19:05:36: select * from eu_btw_codes
+2021-03-15 19:05:47: select * from eu_btw_codes
+2021-03-15 19:05:55: select * from eu_btw_codes
+2021-03-15 19:06:02: select * from eu_btw_codes
+2021-03-15 19:06:16: select * from eu_btw_codes
+2021-03-15 19:06:28: select * from eu_btw_codes
+2021-03-15 19:06:29: select * from eu_btw_codes
+2021-03-15 19:06:48: select * from eu_btw_codes
+2021-03-15 19:07:18: select * from eu_btw_codes
+2021-03-15 19:07:23: select * from eu_btw_codes
+2021-03-15 19:07:52: select * from eu_btw_codes
+2021-03-15 19:08:00: select * from eu_btw_codes
+2021-03-15 19:08:05: select * from eu_btw_codes
+2021-03-15 19:08:12: select * from eu_btw_codes
+2021-03-15 19:08:32: select * from eu_btw_codes
+2021-03-15 19:08:47: select * from eu_btw_codes
+2021-03-15 19:09:07: select * from eu_btw_codes
+2021-03-15 19:09:40: select * from eu_btw_codes
+2021-03-15 19:10:15: select * from eu_btw_codes
+2021-03-15 19:10:38: select * from eu_btw_codes
+2021-03-15 19:10:44: select * from eu_btw_codes
+2021-03-15 19:10:55: select * from eu_btw_codes
+2021-03-15 19:10:56: select * from eu_btw_codes
+2021-03-15 19:15:41: select * from eu_btw_codes
+2021-03-15 19:17:30: select * from eu_btw_codes
+2021-03-15 19:17:51: select * from eu_btw_codes
+2021-03-15 19:20:46: select * from eu_btw_codes
+2021-03-15 19:21:23: select * from eu_btw_codes
+2021-03-15 19:26:16: INSERT INTO eu_btw_codes SET eub_code='NZ', eub_land='nieuw-zeeland' 
+2021-03-15 19:37:59: select * from eu_btw_codes
+2021-03-15 19:38:13: select * from eu_btw_codes
+2021-03-15 19:45:02: select * from eu_btw_codes
+2021-03-15 19:45:41: select * from eu_btw_codes
+2021-03-15 19:45:50: select * from eu_btw_codes
+2021-03-15 19:46:01: select * from eu_btw_codes
+2021-03-15 19:46:36: select * from eu_btw_codes
+2021-03-15 19:46:38: select * from eu_btw_codes
+2021-03-15 19:47:20: select * from eu_btw_codes
+2021-03-15 19:49:17: select * from eu_btw_codes
+2021-03-15 19:59:52: select * from eu_btw_codes
+2021-03-15 19:59:56: select * from eu_btw_codes
+2021-03-15 20:00:09: INSERT INTO eu_btw_codes SET eub_code='BA', eub_land='Bali' 
+2021-03-15 20:00:33: select * from eu_btw_codes
+2021-03-15 20:00:51: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-15 20:07:18: select * from eu_btw_codes
+2021-03-15 20:07:37: select * from eu_btw_codes
+2021-03-15 20:09:35: select * from eu_btw_codes
+2021-03-15 20:09:48: select * from eu_btw_codes

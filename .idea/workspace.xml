@@ -2,77 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="584d5f1c-66c1-44bb-8f51-b383d7c06e8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oef2.2/api/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oef2.2/api/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/assets/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/assets/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/assets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/attraction.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/attraction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/btw.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/btw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/btw_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/btw_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/date1.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/date1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/date2.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/date2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/dropzone.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/dropzone.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/beer4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/beer4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/berlin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/berlin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/big_ben.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/big_ben.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/de_muur.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/de_muur.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/eiffel_toren.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/eiffel_toren.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/london.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/london.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/img/paris.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/img/paris.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/js/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/js/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/access_control.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/access_control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/csv_export_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/csv_export_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/export_btw.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/export_btw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/form_elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/form_elements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/html_functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/html_functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/login_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/sanitize.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/sanitize.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/save.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/security.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/security.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/send.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/strings.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/strings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/lib/upload_dropzone.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/lib/upload_dropzone.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/models/Attraction.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/models/Attraction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/models/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/models/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/models/Weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/models/Weather.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/models/abstractDestination.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/models/abstractDestination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/no_access.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/no_access.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/profiel.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/profiel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/Container.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/DBManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/DBManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/LoginChecker.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/LoginChecker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/MessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/MessageService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/RestClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/RestClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/services/Validator.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/services/Validator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/showLog.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/showLog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/stad.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/stad.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/stad_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/stad_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/steden.php" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/steden.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/attraction.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/attraction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/btw_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/btw_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/column.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/column.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/column_full.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/column_full.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/contactForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/contactForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/dropzone.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/dropzone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/jumbo.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/jumbo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/profiel.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/profiel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oef2.1/templates/stad_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/templates/stad_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef1.7/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/oef1.7/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oef2.2/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/oef2.2/log/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,10 +38,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/oef2.2/js" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -142,7 +75,9 @@
       <workItem from="1615297457685" duration="181000" />
       <workItem from="1615388777522" duration="10603000" />
       <workItem from="1615458605465" duration="1205000" />
-      <workItem from="1615653109345" duration="7588000" />
+      <workItem from="1615653109345" duration="7721000" />
+      <workItem from="1615798898436" duration="513000" />
+      <workItem from="1615833636109" duration="4931000" />
     </task>
     <servers />
   </component>
