@@ -28,7 +28,8 @@ form.onsubmit = async (e) => {
 
   inputLand.value=""
   inputCode.value=""
-  alert("The BTW code has been added")
+
+  alert("The BTW code has been added");
 }
 
 

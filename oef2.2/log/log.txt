@@ -441,3 +441,30 @@
 2021-03-15 21:53:29: select * from eu_btw_codes
 2021-03-15 21:55:11: select * from eu_btw_codes
 2021-03-15 21:55:24: INSERT INTO eu_btw_codes SET eub_code='vn', eub_land='Vietnam' 
+2021-03-16 09:16:45: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-16 09:16:45: select * from images
+2021-03-16 09:21:21: select * from eu_btw_codes
+2021-03-16 09:21:57: select * from images
+2021-03-16 09:22:09: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-16 09:22:10: select * from images
+2021-03-16 09:22:18: select * from eu_btw_codes
+2021-03-16 09:24:31: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-16 09:25:29: DELETE FROM eu_btw_codes WHERE eub_id='41'
+2021-03-16 09:25:52: select * from images
+2021-03-16 09:25:59: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-16 09:26:07: select * from eu_btw_codes
+2021-03-16 09:27:42: INSERT INTO eu_btw_codes SET eub_code='BL', eub_land='Bali' 
+2021-03-16 09:28:06: INSERT INTO eu_btw_codes SET eub_code='LS', eub_land='Laos' 
+2021-03-16 09:29:18: INSERT INTO eu_btw_codes SET eub_code='IN', eub_land='India' 
+2021-03-16 09:31:16: select * from images
+2021-03-16 09:31:19: select * from eu_btw_codes
+2021-03-16 09:31:25: select * from eu_btw_codes
+2021-03-16 09:32:04: select * from eu_btw_codes
+2021-03-16 09:32:49: select * from eu_btw_codes
+2021-03-16 09:33:09: select * from eu_btw_codes
+2021-03-16 09:33:47: SELECT * FROM user WHERE usr_email='julielenaerts@gmail.com' 
+2021-03-16 09:33:48: select * from images
+2021-03-16 09:33:52: select * from eu_btw_codes
+2021-03-16 09:34:25: select * from eu_btw_codes
+2021-03-16 09:35:26: select * from eu_btw_codes
+2021-03-16 09:36:50: select * from eu_btw_codes
