@@ -11,7 +11,7 @@ showBtn.onclick = async (e) => {
   await fetch("http://localhost/php2_oefeningen/oef2.2/api/btwcodes")
       .then((response) => response.json())
       .then((data) => {
-        app.innerHTML = data.map((obj) => `<a id="${obj.eub_id}" href="http://localhost/php2_oefeningen/oef2.2/btw_form.php?eub_id=${obj.eub_id}" target="_blank"><li id="${obj.eub_id}" class="list-group-item">${obj.eub_land}, ${obj.eub_code}</li></a>`).join(' ');
+        app.innerHTML = data.map((obj) => `<a id="${obj.eub_id}" href="http://localhost/php2_oefeningen/oef2.2/btw_form.php?eub_id=${obj.eub_id}" target="_blank" class="list-group-item">${obj.eub_land}, ${obj.eub_code}</a>`).join(' ');
       }).catch((error) => console.log(error))
 }
 
@@ -44,9 +44,6 @@ showBtn.onclick = async (e) => {
 //     const formUpdate = document.getElementById('form_update')
 //     console.log(formUpdate);
 // }
-
-
-
 
 
 // ADD NEW BTW CODE AND COUNTRY
