@@ -14,6 +14,8 @@ PrintNavbar();
     <div class="row">
 
         <?php
+            $container->getMessageService()->ShowInfos();
+
             //get data
             $data = $container->getDBManager()->GetData( "select * from eu_btw_codes where eub_id=" . $_GET['eub_id'] );
 
