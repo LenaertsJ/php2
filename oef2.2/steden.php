@@ -19,9 +19,6 @@ PrintNavbar();
     $container->getMessageService()->ShowErrors();
     $container->getMessageService()->ShowInfos();
 
-    //setup restClient
-//    $restClient = $container->getRestClient();
-
     //get data
     $data = $container->getDBManager()->GetData( "select * from images" );
 

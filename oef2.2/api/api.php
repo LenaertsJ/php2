@@ -16,13 +16,13 @@ header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Content-Type: application/json; charset=UTF-8");
 
 //Basic Authentication controle
-if ( $_SERVER['PHP_AUTH_USER'] !== "user123" OR $_SERVER['PHP_AUTH_PW'] !== "12345678" )
-{
-    //als er geen juiste credentials doorgegeven worden, afbreken met code 401 Unauthorized
-    header('WWW-Authenticate: Basic realm="Provide your username and password for the Voorbeeld API"');
-    header('HTTP/1.0 401 Unauthorized');
-    exit;
-}
+//if ( $_SERVER['PHP_AUTH_USER'] !== "user123" OR $_SERVER['PHP_AUTH_PW'] !== "12345678" )
+//{
+//    //als er geen juiste credentials doorgegeven worden, afbreken met code 401 Unauthorized
+//    header('WWW-Authenticate: Basic realm="Provide your username and password for the Voorbeeld API"');
+//    header('HTTP/1.0 401 Unauthorized');
+//    exit;
+//}
 
 $method = $_SERVER['REQUEST_METHOD'];
 $request_uri = $_SERVER['REQUEST_URI'];
